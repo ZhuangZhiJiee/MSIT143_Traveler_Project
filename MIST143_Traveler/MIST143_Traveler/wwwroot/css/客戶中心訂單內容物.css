@@ -1,0 +1,39 @@
+﻿.訂單內容物 {
+    text-align: center ;
+    display: block;
+    padding: 32px 16px;
+}
+.找不到靈感 {
+    font-size: 14px;
+    line-height: 1.44;
+    font-weight: 400;
+    margin-top: 8px;
+    color: #757575;
+}
+.還沒下單 {
+    font-size: 18px;
+    line-height: 1.44;
+    font-weight: 600;
+    margin-top: 24px;
+    color: #757575;
+}
+.人氣推薦 {
+    margin-bottom: 26px;
+}
+.按鈕顏色 {
+    color: #ffffff;
+    background-color: #FF5B00;
+    border: 1px solid #FF5B00;
+    min-width: 160px;
+    align-items:center
+}
+.按鈕間隔 {
+    margin: 19px -5px -5px;
+}
+.查看詳情 {
+    color: #212121;
+    background-color: transparent;
+    border: 1px solid #4a4a4a;
+    min-width: 160px;
+}
+

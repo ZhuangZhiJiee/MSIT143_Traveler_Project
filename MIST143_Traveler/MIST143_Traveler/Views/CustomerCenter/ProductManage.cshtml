@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewData["Title"] = "ProductManage";
+}
+
+@section Styles{
+    <link href="~/css/客服中心.css" rel="stylesheet" />
+    <link href="~/css/客戶中心訂單內容物.css" rel="stylesheet" />
+}
+
+<body>
+
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="~/images/大頭貼修改.png" class="card-img-top">
+                        <div class="card-body mb-3">
+                            <h5 class="card-title">蝦愛橘子</h5>
+
+                            <input type="file" class="form-control" id="inputGroupFile02">
+                        </div>
+                    </div>
+
+
+
+                    <div>
+                        <div>@Html.ActionLink("個人資訊", "List", "CustomerCenter", null, new { @class = "list-group-item list-group-item-action ", aria_current = "true" })</div>
+                        <div>@Html.ActionLink("訂單管理", "ProductManage", "CustomerCenter", null, new { @class = "list-group-item list-group-item-action active" })</div>
+                        <div>  @Html.ActionLink("我的最愛", "Myfavorites", "CustomerCenter", null, new { @class = "list-group-item list-group-item-action" })</div>
+                        <div> @Html.ActionLink("我的評論", "Review", "CustomerCenter", null, new { @class = "list-group-item list-group-item-action" })</div>
+                        <div> @Html.ActionLink("Star積分", "Star", "CustomerCenter", null, new { @class = "list-group-item list-group-item-action" })</div>
+                        <div>@Html.ActionLink("優惠券", "Coupon", "CustomerCenter", null, new { @class = "list-group-item list-group-item-action" })</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-9">
+                    <div class="row row-cols-1">
+                        <div class="col">
+                            <h3>訂單管理</h3>
+                            <div>
+                                <div class="訂單內容物">
+                                    <img src="https://res.klook.com/image/upload/v1645521732/tuv7ipnsnwwp5sa8sbjg.gif" width="260" height="180" alt="">
+                                    <h4 class="還沒下單">還沒下單?</h4>
+                                    <div class="找不到靈感">找不到靈感?不妨看看下方精選推薦！</div>
+                                </div>
+                                <div>
+                                    <h3 class="人氣推薦">人氣推薦 TOP10</h3>
+                                    <div class="等兆倫的跑馬燈">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>

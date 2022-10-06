@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewData["Title"] = "Star";
+}
+@section Styles{
+    <link href="~/css/客服中心.css" rel="stylesheet" />
+    <link href="~/css/客戶中心訂單內容物.css" rel="stylesheet" />
+}
+
+<body>
+
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="~/images/大頭貼修改.png" class="card-img-top">
+                        <div class="card-body mb-3">
+                            <h5 class="card-title">蝦愛橘子</h5>
+
+                            <input type="file" class="form-control" id="inputGroupFile02">
+                        </div>
+                    </div>
+
+
+
+                    <div>
+                        <div>@Html.ActionLink("個人資訊", "List", "CustomerCenter", null, new { @class = "list-group-item list-group-item-action ", aria_current = "true" })</div>
+                        <div>@Html.ActionLink("訂單管理", "ProductManage", "CustomerCenter", null, new { @class = "list-group-item list-group-item-action " })</div>
+                        <div>  @Html.ActionLink("我的最愛", "Myfavorites", "CustomerCenter", null, new { @class = "list-group-item list-group-item-action" })</div>
+                        <div> @Html.ActionLink("我的評論", "Review", "CustomerCenter", null, new { @class = "list-group-item list-group-item-action" })</div>
+                        <div> @Html.ActionLink("Star積分", "Star", "CustomerCenter", null, new { @class = "list-group-item list-group-item-action  active" })</div>
+                        <div>@Html.ActionLink("優惠券", "Coupon", "CustomerCenter", null, new { @class = "list-group-item list-group-item-action" })</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-9">
+                    <div class="row row-cols-1">
+                        <div class="col">
+                            <h3>Star積分</h3>
+                            <div>
+                                <div class="訂單內容物">
+                                    <img src="https://res.klook.com/image/upload/v1645521894/h3orblcndg9fhacqm0th.webp" width="260" height="180" alt="">
+                                    <h4 class="還沒下單">沒積分？免煩惱！</h4>
+                                    <div class="找不到靈感">完成體驗活動即可獲得 Klook 積分，輕鬆折抵下次消費</div>
+
+                                    <div class="按鈕間隔">
+                                        <button type="button" class="btn btn-warning 按鈕顏色">
+                                            <span>
+                                                去逛逛
+                                            </span>
+                                        </button>
+                                        @*<button type="button" class="btn btn-secondary 查看詳情">*@
+                                        <span>
+                                            @Html.ActionLink("查看詳情", "Star積分說明", "Home", null, new { @class = "btn btn-secondary 查看詳情" })
+                                        </span>
+                                        @*</button>*@
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+
+</body>
+

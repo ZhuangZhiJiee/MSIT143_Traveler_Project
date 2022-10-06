@@ -1,0 +1,365 @@
+﻿
+@{
+    ViewData["Title"] = "ContactCenter";
+}
+@section Styles{
+
+    <link href="~/css/924自用.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+}
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-warning" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+    @*上方黑色工具列 Start
+        <div class="container-fluid top-bar bg-dark text-light px-0 wow fadeIn"
+             data-wow-delay="0.1s">
+            <div class="row gx-0 align-items-center d-none d-lg-flex">
+                <div class="col-lg-6 px-5 text-start">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item">
+                            <a class="small text-light" href="#">Home</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a class="small text-light" href="#">Career</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a class="small text-light" href="#">Terms</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a class="small text-light" href="#">Privacy</a>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-lg-6 px-5 text-end">
+                    <small>Follow us:</small>
+                    <div class="h-100 d-inline-flex align-items-center">
+                        <a class="btn-lg-square text-warning border-end rounded-0" href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="btn-lg-square text-warning border-end rounded-0" href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="btn-lg-square text-warning border-end rounded-0" href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="btn-lg-square text-warning pe-0" href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+    <!-- Topbar End -->
+    <!-- 需要協助那一欄Navbar Start -->
+    <!--<nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn"
+         data-wow-delay="0.1s">-->
+    <!-- <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+      <h1 class="text-warning m-0">123</h1>
+    </a> -->
+    <!--<button type="button"
+                class="navbar-toggler me-4"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link">Services</a>
+                <a href="product.html" class="nav-item nav-link">Products</a>
+                <div class="nav-item dropdown">
+                    <a href="#"
+                       class="nav-link dropdown-toggle"
+                       data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="team.html" class="dropdown-item">Our Team</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="404.html" class="dropdown-item">404 Page</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link active">Contact</a>
+            </div>
+        </div>
+    </nav>-->
+    <!-- Navbar End -->
+    <!-- 圖中間麵包屑Page Header Start -->
+    <div class="container-fluid page-header py-6 wow fadeIn"
+         data-wow-delay="0.1s">
+        <div class="container text-center pt-5 pb-3">
+            <h1 class="display-4 text-white animated slideInDown mb-3">
+                Contact Us
+            </h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item">
+                        <a class="text-white" href="#">Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a class="text-white" href="#">Pages</a>
+                    </li>
+                    <li class="breadcrumb-item text-warning active" aria-current="page">
+                        Contact
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+    <!-- 查詢訂單三蘭Contact Start -->
+    <div class="container-xxl py-3">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp"
+                 data-wow-delay="0.1s"
+                 style="max-width: 1000px">
+                <div class="row row-cols-md-3">
+                    <div class="col">
+                        <div class="card order" style="width: 18rem">
+                            <a href="#">
+                                <div class="card-body">
+                                    <img src="~/images/order1.png" />
+                                    <h5 class="card-title">查詢訂單狀態</h5>
+
+                                    <!-- <a href="#" class="btn btn-warning">Go somewhere</a> -->
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card order" style="width: 18rem">
+                            <a href="#">
+                                <div class="card-body">
+                                    <img src="~/images/order2.png" />
+                                    <h5 class="card-title">更改訂單</h5>
+
+                                    <!-- <a href="#" class="btn btn-warning">Go somewhere</a> -->
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card order" style="width: 18rem">
+                            <a href="#">
+                                <div class="card-body">
+                                    <img src="~/images/order3.png" />
+                                    <h5 class="card-title">取消訂單</h5>
+
+                                    <!-- <a href="#" class="btn btn-warning">Go somewhere</a> -->
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="search_area">
+                    <div class="search_area_contant">
+                        <strong class="text-warning text-uppercase textmm mx-auto">搜尋常見問題</strong>
+
+                        <div class="search_area_contant_bar">
+                            <input class="form-control"
+                                   type="text"
+                                   placeholder="輸入搜尋關鍵字"
+                                   aria-label="default input example" />
+                            <button type="button" class="btn btn-warning">送出</button>
+                        </div>
+                        <h1 class="display-6 mb-4">
+                            If You Have Any Query, Please Contact Us
+                        </h1>
+                    </div>
+                </section>
+
+                <div class="row g-0 justify-content-center">
+                    <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
+                        <strong class="text-warning text-uppercase textmm">熱門常見問題</strong>
+                    </div>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                    Klook 積分怎麼用？
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne"
+                                 class="accordion-collapse collapse"
+                                 aria-labelledby="flush-headingOne"
+                                 data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    只要擁有10積分以上，即可於任一筆訂單的付款頁面使用並立享現金折抵。積分越多，折抵越多！
+                                    付款時記得使用積分哦！ <code>.accordion-flush</code> class.
+                                    This is the first item's accordion body.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                    如何取消訂單並申請退款？
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo"
+                                 class="accordion-collapse collapse"
+                                 aria-labelledby="flush-headingTwo"
+                                 data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    視各活動取消政策而定 【免費取消訂單】
+                                    請於取消政策規定指定時間內自行取消訂單，步驟如下：
+                                    前往訂單頁面 選擇欲取消訂單，點擊「申請退款」
+                                    選擇退款原因、退款數量，點擊「下一步」 【有條件取消訂單】
+                                    詳情請查看活動頁面取消政策說明；如欲申請退款，請透過線上客服與我們聯繫（前往訂單頁面
+                                    > 選擇訂單 > 點擊「線上客服」圖示） 【不可取消訂單】
+                                    抱歉，此類活動無法退款 <code>.accordion-flush</code> class.
+                                    This is the second item's accordion body. Let's imagine this
+                                    being filled with some actual content.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                    如何獲得 Klook 積分？
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree"
+                                 class="accordion-collapse collapse"
+                                 aria-labelledby="flush-headingThree"
+                                 data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    登入 Klook 帳戶、預訂並完成活動後，將獲贈活動價格1 - 5%的
+                                    Klook 積分
+                                    留下評價還可獲贈額外的積分。請注意，並非預訂每個活動或留下評價都有贈送積分。詳情請查看服務條款
+                                    <code>.accordion-flush</code> class. This is the third
+                                    item's accordion body. Nothing more exciting happening here
+                                    in terms of content, but just filling up the space to make
+                                    it look, at least at first glance, a bit more representative
+                                    of how this would look in a real-world application.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFour"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseFour">
+                                    Klook 積分會過期嗎？
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour"
+                                 class="accordion-collapse collapse"
+                                 aria-labelledby="flush-headingFour"
+                                 data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Klook
+                                    帳戶內的積分自最近一次下單日期或獲得積分日期起算，效期12個月
+                                    例：帳戶內有100積分，最後一次下單日期為2022年8月1日，該100積分最後效期日為2023年8月1日
+                                    如於2022年12月1日再次下單，積分效期將重新計算，延長至2023年12月1日
+                                    如於2023年1月1日留下活動評價，獲得積分，則積分效期延至2024年1月1日
+                                    提醒您，2022年6月30日（含）前所獲得之積分，最後效期日為2023年6月30日
+                                    <code>.accordion-flush</code> class. This is the third
+                                    item's accordion body. Nothing more exciting happening here
+                                    in terms of content, but just filling up the space to make
+                                    it look, at least at first glance, a bit more representative
+                                    of how this would look in a real-world application.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFive">
+                                <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFive"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseFive">
+                                    下單後，何時會收到憑證？
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive"
+                                 class="accordion-collapse collapse"
+                                 aria-labelledby="flush-headingFive"
+                                 data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    視預訂活動而定
+                                    詳情請查看活動頁面說明（立即確認／24小時內確認／48小時內確認）
+                                    如為「立即確認」活動，訂單將於5分鐘內確認
+                                    如於時限內未收到確認郵件，建議先查看電子信箱的垃圾郵件匣
+                                    如仍需協助，請透過線上客服與我們聯繫（前往訂單頁面 >
+                                    選擇訂單 > 點擊「線上客服」圖示）
+                                    <code>.accordion-flush</code> class. This is the third
+                                    item's accordion body. Nothing more exciting happening here
+                                    in terms of content, but just filling up the space to make
+                                    it look, at least at first glance, a bit more representative
+                                    of how this would look in a real-world application.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+    <!-- Google Map Start -->
+    <div class="container-xxl py-6 px-0 wow fadeInUp" data-wow-delay="0.1s">
+        <iframe class="w-100 mb-n2"
+                style="height: 450px"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1074.7499700843825!2d121.54319602551293!3d25.033612914371894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abd379a5ec97%3A0xedc006d25a9e35df!2z6LWE5bGV5Zu96ZmF6IKh5Lu95pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-CN!2stw!4v1664007213797!5m2!1szh-CN!2stw"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            >
+        </iframe>
+    </div>
+    <!-- Google Map End -->
+
+    <a href="#"
+       class="btn btn-lg btn-warning btn-lg-square rounded-circle back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+
+</body>
+
+@section Scripts{
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/wow/wow.min.js"></script>
+    <script src="~/lib/easing/easing.min.js"></script>
+    <script src="~/lib/waypoints/waypoints.min.js"></script>
+    <script src="~/lib/counterup/counterup.min.js"></script>
+    <script src="~/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="~/js/main.js"></script>
+}
