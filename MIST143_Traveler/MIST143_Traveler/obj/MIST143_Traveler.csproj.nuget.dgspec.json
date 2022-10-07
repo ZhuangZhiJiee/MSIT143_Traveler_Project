@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\shared\\MSIT143_Travel_Project\\MIST143_Traveler\\MIST143_Traveler\\MIST143_Traveler.csproj": {}
+    "C:\\MSIT143_Traveler_project\\MIST143_Traveler\\MIST143_Traveler\\MIST143_Traveler.csproj": {}
   },
   "projects": {
-    "C:\\shared\\MSIT143_Travel_Project\\MIST143_Traveler\\MIST143_Traveler\\MIST143_Traveler.csproj": {
+    "C:\\MSIT143_Traveler_project\\MIST143_Traveler\\MIST143_Traveler\\MIST143_Traveler.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\shared\\MSIT143_Travel_Project\\MIST143_Traveler\\MIST143_Traveler\\MIST143_Traveler.csproj",
+        "projectUniqueName": "C:\\MSIT143_Traveler_project\\MIST143_Traveler\\MIST143_Traveler\\MIST143_Traveler.csproj",
         "projectName": "MIST143_Traveler",
-        "projectPath": "C:\\shared\\MSIT143_Travel_Project\\MIST143_Traveler\\MIST143_Traveler\\MIST143_Traveler.csproj",
+        "projectPath": "C:\\MSIT143_Traveler_project\\MIST143_Traveler\\MIST143_Traveler\\MIST143_Traveler.csproj",
         "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
-        "outputPath": "C:\\shared\\MSIT143_Travel_Project\\MIST143_Traveler\\MIST143_Traveler\\obj\\",
+        "outputPath": "C:\\MSIT143_Traveler_project\\MIST143_Traveler\\MIST143_Traveler\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
