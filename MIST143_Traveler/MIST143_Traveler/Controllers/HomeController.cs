@@ -20,8 +20,7 @@ namespace MIST143_Traveler.Controllers
 
         public IActionResult Index()
         {
-            return View();//branch test//蒜泥白肉好好吃
-
+            return View();
         }
 
         public IActionResult Privacy()
@@ -31,7 +30,7 @@ namespace MIST143_Traveler.Controllers
 
         public IActionResult ContactCenter()
         {
-            return View(); //miyo的小天地
+            return View(); 
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
