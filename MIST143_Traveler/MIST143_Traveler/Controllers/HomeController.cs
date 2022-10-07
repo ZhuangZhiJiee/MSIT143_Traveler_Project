@@ -20,7 +20,7 @@ namespace MIST143_Traveler.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View();//branch test
         }
 
         public IActionResult Privacy()
