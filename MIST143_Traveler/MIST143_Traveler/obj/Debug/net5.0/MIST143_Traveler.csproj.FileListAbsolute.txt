@@ -124,6 +124,10 @@ C:\MSIT143_Traveler_project\MIST143_Traveler\MIST143_Traveler\obj\Debug\net5.0\R
 C:\MSIT143_Traveler_project\MIST143_Traveler\MIST143_Traveler\obj\Debug\net5.0\Razor\Views\Shopping\PayCheckout.cshtml.g.cs
 C:\MSIT143_Traveler_project\MIST143_Traveler\MIST143_Traveler\obj\Debug\net5.0\Razor\Views\Shopping\ShoppingCart.cshtml.g.cs
 C:\MSIT143_Traveler_project\MIST143_Traveler\MIST143_Traveler\obj\Debug\net5.0\Razor\Views\ProductListPage\ProductListHomePage.cshtml.g.cs
+<<<<<<< HEAD
+=======
+C:\MSIT143_Traveler_project\MIST143_Traveler\MIST143_Traveler\obj\Debug\net5.0\Razor\Views\TransportationPage\TransportationHomePage.cshtml.g.cs
+>>>>>>> master
 C:\Users\Student\Source\Repos\MSIT143_Traveler_Project\MIST143_Traveler\MIST143_Traveler\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\Student\Source\Repos\MSIT143_Traveler_Project\MIST143_Traveler\MIST143_Traveler\bin\Debug\net5.0\appsettings.json
 C:\Users\Student\Source\Repos\MSIT143_Traveler_Project\MIST143_Traveler\MIST143_Traveler\bin\Debug\net5.0\MIST143_Traveler.exe
