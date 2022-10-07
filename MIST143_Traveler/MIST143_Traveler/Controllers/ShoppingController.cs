@@ -10,7 +10,7 @@ namespace MIST143_Traveler.Controllers
     {
         public IActionResult PayData()
         {
-            //高歌離席123
+            //測試使用
             return View();
         }
         public IActionResult PayCheckout()
