@@ -20,7 +20,7 @@ namespace MIST143_Traveler.Controllers
 
         public IActionResult Index()
         {
-            return View();//branch test//bootstrap更新
+            return View();//branch test//好難玩
 
         }
 
