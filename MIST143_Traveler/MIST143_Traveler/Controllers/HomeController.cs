@@ -21,6 +21,7 @@ namespace MIST143_Traveler.Controllers
         public IActionResult Index()
         {
             return View();//branch test//bootstrap更新
+
         }
 
         public IActionResult Privacy()
