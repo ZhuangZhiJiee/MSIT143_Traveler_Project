@@ -20,7 +20,16 @@ namespace MIST143_Traveler.Controllers
 
         public IActionResult Index()
         {
+<<<<<<< HEAD
             return View();//branch test //蒜泥白肉
+=======
+<<<<<<< HEAD
+            return View();//branch test//蒜泥白肉好好吃萬歲
+=======
+            return View();//branch test//蒜泥白肉好好吃600元便當店
+>>>>>>> master
+
+>>>>>>> 09933be649568a603707c98d68d5f3c16bbc74a8
         }
 
         public IActionResult Privacy()
