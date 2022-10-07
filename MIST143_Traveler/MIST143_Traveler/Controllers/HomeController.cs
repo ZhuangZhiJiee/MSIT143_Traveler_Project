@@ -30,7 +30,7 @@ namespace MIST143_Traveler.Controllers
 
         public IActionResult ContactCenter()
         {
-            return View(); //miyo的小天地
+            return View(); //miyo的小天地MI測試
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
