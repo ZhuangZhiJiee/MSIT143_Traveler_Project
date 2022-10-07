@@ -27,10 +27,7 @@ namespace MIST143_Traveler.Controllers
         {
             return View();
         }
-        public IActionResult ProductListPage()
-        {
-            return View();
-        }
+
         public IActionResult ContactCenter()
         {
             return View();

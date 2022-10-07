@@ -114,7 +114,6 @@ C:\MSIT143_Traveler_project\MIST143_Traveler\MIST143_Traveler\bin\Debug\net5.0\z
 C:\MSIT143_Traveler_project\MIST143_Traveler\MIST143_Traveler\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\MSIT143_Traveler_project\MIST143_Traveler\MIST143_Traveler\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\MSIT143_Traveler_project\MIST143_Traveler\MIST143_Traveler\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
-C:\MSIT143_Traveler_project\MIST143_Traveler\MIST143_Traveler\obj\Debug\net5.0\Razor\Views\Home\ProductListPage.cshtml.g.cs
 C:\MSIT143_Traveler_project\MIST143_Traveler\MIST143_Traveler\obj\Debug\net5.0\Razor\Views\CustomerCenter\List.cshtml.g.cs
 C:\MSIT143_Traveler_project\MIST143_Traveler\MIST143_Traveler\obj\Debug\net5.0\Razor\Views\CustomerCenter\ProductManage.cshtml.g.cs
 C:\MSIT143_Traveler_project\MIST143_Traveler\MIST143_Traveler\obj\Debug\net5.0\Razor\Views\CustomerCenter\Myfavorites.cshtml.g.cs
@@ -124,3 +123,4 @@ C:\MSIT143_Traveler_project\MIST143_Traveler\MIST143_Traveler\obj\Debug\net5.0\R
 C:\MSIT143_Traveler_project\MIST143_Traveler\MIST143_Traveler\obj\Debug\net5.0\Razor\Views\Shopping\PayData.cshtml.g.cs
 C:\MSIT143_Traveler_project\MIST143_Traveler\MIST143_Traveler\obj\Debug\net5.0\Razor\Views\Shopping\PayCheckout.cshtml.g.cs
 C:\MSIT143_Traveler_project\MIST143_Traveler\MIST143_Traveler\obj\Debug\net5.0\Razor\Views\Shopping\ShoppingCart.cshtml.g.cs
+C:\MSIT143_Traveler_project\MIST143_Traveler\MIST143_Traveler\obj\Debug\net5.0\Razor\Views\ProductListPage\ProductListHomePage.cshtml.g.cs
