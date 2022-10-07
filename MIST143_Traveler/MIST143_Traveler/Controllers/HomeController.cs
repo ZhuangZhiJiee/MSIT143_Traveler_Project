@@ -20,12 +20,7 @@ namespace MIST143_Traveler.Controllers
 
         public IActionResult Index()
         {
-<<<<<<< HEAD
-            return View();//branch test//蒜泥白肉好好吃萬歲
-=======
-            return View();//branch test//蒜泥白肉好好吃600元便當店
->>>>>>> master
-
+            return View(); //認可測試
         }
 
         public IActionResult Privacy()
@@ -35,7 +30,7 @@ namespace MIST143_Traveler.Controllers
 
         public IActionResult ContactCenter()
         {
-            return View(); //miyo的小天地
+            return View(); 
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
