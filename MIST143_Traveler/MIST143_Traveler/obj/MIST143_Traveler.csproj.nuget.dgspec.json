@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Student\\Source\\Repos\\MSIT143_Traveler_Project\\MIST143_Traveler\\MIST143_Traveler\\MIST143_Traveler.csproj": {}
+    "C:\\Users\\hiroki\\Source\\Repos\\MSIT143_Traveler_Project\\MIST143_Traveler\\MIST143_Traveler\\MIST143_Traveler.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Student\\Source\\Repos\\MSIT143_Traveler_Project\\MIST143_Traveler\\MIST143_Traveler\\MIST143_Traveler.csproj": {
+    "C:\\Users\\hiroki\\Source\\Repos\\MSIT143_Traveler_Project\\MIST143_Traveler\\MIST143_Traveler\\MIST143_Traveler.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Student\\Source\\Repos\\MSIT143_Traveler_Project\\MIST143_Traveler\\MIST143_Traveler\\MIST143_Traveler.csproj",
+        "projectUniqueName": "C:\\Users\\hiroki\\Source\\Repos\\MSIT143_Traveler_Project\\MIST143_Traveler\\MIST143_Traveler\\MIST143_Traveler.csproj",
         "projectName": "MIST143_Traveler",
-        "projectPath": "C:\\Users\\Student\\Source\\Repos\\MSIT143_Traveler_Project\\MIST143_Traveler\\MIST143_Traveler\\MIST143_Traveler.csproj",
-        "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Student\\Source\\Repos\\MSIT143_Traveler_Project\\MIST143_Traveler\\MIST143_Traveler\\obj\\",
+        "projectPath": "C:\\Users\\hiroki\\Source\\Repos\\MSIT143_Traveler_Project\\MIST143_Traveler\\MIST143_Traveler\\MIST143_Traveler.csproj",
+        "packagesPath": "C:\\Users\\hiroki\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hiroki\\Source\\Repos\\MSIT143_Traveler_Project\\MIST143_Traveler\\MIST143_Traveler\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Student\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hiroki\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -71,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.412\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
         }
       }
     }
