@@ -19,7 +19,7 @@ namespace MIST143_Traveler.Controllers
             return View();
         }
 
-        public IActionResult ProductManage()//在家測試123456123
+        public IActionResult ProductManage()//在家測試123456123312312321
         {
             return View();
         }
