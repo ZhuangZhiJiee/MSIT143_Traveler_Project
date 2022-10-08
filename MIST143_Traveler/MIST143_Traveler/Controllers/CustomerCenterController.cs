@@ -41,18 +41,16 @@ namespace MIST143_Traveler.Controllers
             return View();
         }
 
-        public IActionResult 註冊Modal(/*Member p*/)
+        public IActionResult Createmember()
         {
-        //    PlanetTravelContext db = new PlanetTravelContext();
-        //    db.Members.Add(p);
-        //    db.SaveChanges();
 
             return View();
         }
-        public IActionResult 先隨便()
+        public IActionResult LoginModal()
         {
-            return PartialView("註冊Modal");
+            return View();
         }
+
     }
 }
 
