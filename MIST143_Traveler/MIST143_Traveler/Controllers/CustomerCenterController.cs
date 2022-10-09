@@ -19,26 +19,31 @@ namespace MIST143_Traveler.Controllers
             return View();
         }
 
-        public IActionResult ProductManage()//在家測試123456123312312321
+        public IActionResult ProductManage()
         {
-            return View();
+            return PartialView();
         }
 
         public IActionResult Myfavorites()
         {
-            return View();
+            return PartialView();
         }
         public IActionResult Review()
         {
-            return View();
+            return PartialView();
         }
         public IActionResult Coupon()
         {
-            return View();
+            return PartialView();
         }
         public IActionResult Star()
         {
-            return View();
+            return PartialView();
+        }
+
+        public IActionResult CustomerInfo()
+        {
+            return PartialView();
         }
 
         public IActionResult Createmember()
