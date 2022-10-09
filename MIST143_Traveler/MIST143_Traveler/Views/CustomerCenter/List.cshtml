@@ -2,7 +2,7 @@
 
 }
 <link href="~/css/客服中心.css" rel="stylesheet" />
-
+<link href="~/css/客服中心訂單內容物.css" rel="stylesheet" />
 <body>
 
     <article>
@@ -18,19 +18,20 @@
                         </div>
                     </div>
 
-
+                    
 
                     <div>
-                        <div><button id="btncus" class="list-group-item list-group-item-action active">編輯個人資訊</button></div>
+                        <div><button id="btncus" class="btn btn-outline-warning 按鈕顏色2 active 選單"><span class="bi bi-people 小圖示"></span>個人資訊</button></div>
                         <div>@*@Html.ActionLink("個人資訊", "List", "CustomerCenter", null, new { @class = "list-group-item list-group-item-action active", aria_current = "true"  })*@</div>
-                        <div><button id="btnorder" class="list-group-item list-group-item-action">訂單管理</button></div>
+                        <div><button id="btnorder" class="btn btn-outline-warning 按鈕顏色2"><span class=" bi bi-bag 小圖示"></span>訂單管理</button></div>
                         @*<div>@Html.ActionLink("訂單管理", "ProductManage", "CustomerCenter", null, new { @class = "list-group-item list-group-item-action" })</div>*@
-                        <div><button id="btnlove" class="list-group-item list-group-item-action">我的最愛</button></div>
-                        <div><button id="btnreview" class="list-group-item list-group-item-action">我的評論</button></div>
-                        <div><button id="btnstar" class="list-group-item list-group-item-action">Star積分</button></div>
-                        <div><button id="btncop" class="list-group-item list-group-item-action">優惠券</button></div>
+                        <div><button id="btnlove" class="btn btn-outline-warning 按鈕顏色2"><span class="bi bi-heart 小圖示"></span>我的最愛</button></div>
+                        <div><button id="btnreview" class="btn btn-outline-warning 按鈕顏色2"><span class="bi bi-chat-left-text 小圖示"></span>我的評論</button></div>
+                        <div><button id="btnstar" class="btn btn-outline-warning 按鈕顏色2"><span class="bi bi-star 小圖示"></span>Star積分</button></div>
+                        <div><button id="btncop" class="btn btn-outline-warning 按鈕顏色2"><span class="bi bi-wallet2 小圖示"></span>優惠票券</button></div>
                     </div>
                 </div>
+
                 <div id="cont" class="col-12 col-md-9">
 
                 </div>
@@ -45,7 +46,7 @@
 
          $('#btncus').click(function () {
         $('#cont').load('@Url.Content("~/CustomerCenter/CustomerInfo")')
-        $(this).addClass("list-group-item list-group-item-action active")//訂單按鈕
+             $(this).addClass("btn btn-outline-warning 按鈕顏色2 active")//訂單按鈕
              $('#btnlove').removeClass("active")
              $('#btnreview').removeClass("active")
              $('#btnstar').removeClass("active")
@@ -56,7 +57,7 @@
 
     $('#btnorder').click(function () {
         $('#cont').load('@Url.Content("~/CustomerCenter/ProductManage")')
-        $(this).addClass("list-group-item list-group-item-action active")//訂單按鈕
+        $(this).addClass("btn btn-outline-warning 按鈕顏色2 active")//訂單按鈕
         $('#btnlove').removeClass("active")
         $('#btnreview').removeClass("active")
         $('#btnstar').removeClass("active")
@@ -66,7 +67,7 @@
 
     $('#btnlove').click(function () {
         $('#cont').load('@Url.Content("~/CustomerCenter/Myfavorites")')
-        $(this).addClass("list-group-item list-group-item-action active")
+        $(this).addClass("btn btn-outline-warning 按鈕顏色2 active")
         $('#btnorder').removeClass("active")
         $('#btnreview').removeClass("active")
         $('#btnstar').removeClass("active")
@@ -77,7 +78,7 @@
 
         $('#btnreview').click(function () {
         $('#cont').load('@Url.Content("~/CustomerCenter/Review")')
-            $(this).addClass("list-group-item list-group-item-action active") //我的評論按鈕
+            $(this).addClass("btn btn-outline-warning 按鈕顏色2 active") //我的評論按鈕
             $('#btnorder').removeClass("active")
             $('#btnlove').removeClass("active")
             $('#btnstar').removeClass("active")
@@ -87,7 +88,7 @@
 
         $('#btnstar').click(function () {
         $('#cont').load('@Url.Content("~/CustomerCenter/Star")')
-            $(this).addClass("list-group-item list-group-item-action active") //Star
+            $(this).addClass("btn btn-outline-warning 按鈕顏色2 active") //Star
             $('#btnorder').removeClass("active")
             $('#btnlove').removeClass("active")
             $('#btnreview').removeClass("active")
@@ -97,7 +98,7 @@
 
         $('#btncop').click(function () {
         $('#cont').load('@Url.Content("~/CustomerCenter/Coupon")')
-            $(this).addClass("list-group-item list-group-item-action active") //優惠券按鈕
+            $(this).addClass("btn btn-outline-warning 按鈕顏色2 active") //優惠券按鈕
             $('#btnorder').removeClass("active")
             $('#btnlove').removeClass("active")
             $('#btnreview').removeClass("active")
