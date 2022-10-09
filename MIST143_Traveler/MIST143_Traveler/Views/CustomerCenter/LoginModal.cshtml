@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "LoginModal";
+    Layout = null;
+}
+
+
+<link rel="stylesheet" href="~/css/客服中心.css" />
+<form method="post">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">使用者帳號</label>
+        <input type="text" class="form-control" id="Actemail" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">使用者密碼</label>
+        <input type="password" class="form-control" id="Pas" placeholder="password">
+    </div>
+    <div class="modal-footer mx-auto">
+        <button type="submit" class="btn btn-primary">送出</button>
+        <button type="button" class="btn btn-success" id=" demo" onclick="DemoValue()">Demo</button>
+        <button type="button" class="btn btn-dark">忘記密碼</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉視窗</button>
+    </div>
+</form>
+@section Scripts {
+<script>
+
+
+</script>
+
+@*@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}*@
+}
+<script>
+    const DemoValue = () => {
+        let act = document.querySelector("#Actemail").value = "mi@123.com";
+        let pas = document.querySelector("#Pas").value = 12345678;
+    }</script>
+

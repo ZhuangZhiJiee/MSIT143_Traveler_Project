@@ -6558,25 +6558,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Student\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\莊智傑\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Student\\Source\\Repos\\MSIT143_Traveler_Project\\MIST143_Traveler\\MIST143_Traveler\\MIST143_Traveler.csproj",
+      "projectUniqueName": "C:\\Users\\莊智傑\\source\\repos\\MSIT143_Traveler_Project\\MIST143_Traveler\\MIST143_Traveler\\MIST143_Traveler.csproj",
       "projectName": "MIST143_Traveler",
-      "projectPath": "C:\\Users\\Student\\Source\\Repos\\MSIT143_Traveler_Project\\MIST143_Traveler\\MIST143_Traveler\\MIST143_Traveler.csproj",
-      "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Student\\Source\\Repos\\MSIT143_Traveler_Project\\MIST143_Traveler\\MIST143_Traveler\\obj\\",
+      "projectPath": "C:\\Users\\莊智傑\\source\\repos\\MSIT143_Traveler_Project\\MIST143_Traveler\\MIST143_Traveler\\MIST143_Traveler.csproj",
+      "packagesPath": "C:\\Users\\莊智傑\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\莊智傑\\source\\repos\\MSIT143_Traveler_Project\\MIST143_Traveler\\MIST143_Traveler\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Student\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\莊智傑\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
