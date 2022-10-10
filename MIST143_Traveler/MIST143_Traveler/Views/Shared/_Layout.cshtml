@@ -22,7 +22,7 @@
 
             <form class="header-search">
                 <div class="header-search-box">
-                    <button type="submit" class="">
+                    <button type="button" onclick="location.href='@Url.Action("ProductListHomePage", "ProductListPage")'"> 
                         <span class="bi-search"></span>
                     </button>
                     <input type="search"
@@ -34,7 +34,7 @@
 
             <nav class="main-nav">
                 <a href="@Url.Content("~/Home/ContactCenter")">客服中心</a>
-                <a href="#">最近逛過</a>
+                <a href="@Url.Content("~/ProductListPage/ProductListHomePage")">最近逛過</a>
 
                 <a href="@Url.Content("~/Shopping/ShoppingCart")">購物車</a>
                 <a onclick="showmodal('@Url.Action("Createmember","CustomerCenter",null,Context.Request.Scheme)',null)">註冊</a>
@@ -81,16 +81,16 @@
         <div class="secondary-nav">
             <ul class="secondary-nav-container">
                 <li>
-                    <a href="#"><i class="bi bi-geo-alt"></i>探索目的地</a>
+                    <a href="@Url.Content("~/ProductListPage/ProductListHomePage")"><i class="bi bi-geo-alt"></i>探索目的地</a>
                 </li>
-                <li><a href="#">全部分類</a></li>
-                <li><a href="#">玩樂</a></li>
-                <li><a href="#">美食品嘗</a></li>
-                <li><a href="#">住宿</a></li>
-                <li><a href="#">展演活動</a></li>
-                <li><a href="#">交通</a></li>
-                <li><a href="#">租車&接送</a></li>
-                <li><a href="#">探索更多玩法</a></li>
+                <li><a href="@Url.Content("~/ProductListPage/ProductListHomePage")">全部分類</a></li>
+                <li><a href="@Url.Content("~/ProductListPage/ProductListHomePage")">玩樂</a></li>
+                <li><a href="@Url.Content("~/ProductListPage/ProductListHomePage")">美食品嘗</a></li>
+                <li><a href="@Url.Content("~/ProductListPage/ProductListHomePage")">住宿</a></li>
+                <li><a href="@Url.Content("~/ProductListPage/ProductListHomePage")">展演活動</a></li>
+                <li><a href="@Url.Content("~/TransportationPage/TransportationHomePage")">交通</a></li>
+                <li><a href="@Url.Content("~/TransportationPage/TransportationHomePage")">租車&接送</a></li>
+                <li><a href="@Url.Content("~/ProductListPage/ProductListHomePage")">探索更多玩法</a></li>
             </ul>
         </div>
     </nav>

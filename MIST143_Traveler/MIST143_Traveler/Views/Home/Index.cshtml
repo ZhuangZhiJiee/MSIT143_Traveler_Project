@@ -19,7 +19,8 @@
                            name=""
                            id=""
                            placeholder="探索全球目的地/活動" />
-                    <button type="submit">搜尋</button>
+                    <button type="button" onclick="location.href='@Url.Action("ProductListHomePage", "ProductListPage")'">搜尋</button>                    
+                    
                 </div>
             </form>
         </div>
@@ -37,23 +38,25 @@
                          class="d-block w-100"
                          alt="banner02" />
                 </div>
-                <div class="carousel-item">
+                @*<div class="carousel-item">
                     <img src="@Url.Content("~/Images/banner03.jpg")"
                          class="d-block w-100"
                          alt="banner03" />
-                </div>
+                </div>*@
             </div>
             <button class="carousel-control-prev"
                     type="button"
                     data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
+                    data-bs-slide="prev"
+                    style="margin-left:-50px">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next"
                     type="button"
                     data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
+                    data-bs-slide="next"
+                     style="margin-right:-30px">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
