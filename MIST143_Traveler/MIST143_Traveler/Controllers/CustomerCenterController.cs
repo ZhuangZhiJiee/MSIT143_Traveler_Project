@@ -19,39 +19,54 @@ namespace MIST143_Traveler.Controllers
             return View();
         }
 
-        public IActionResult ProductManage()//在家測試123456123
+        public IActionResult ProductManage()
         {
-            return View();
+            return PartialView();
         }
 
         public IActionResult Myfavorites()
         {
-            return View();
+            return PartialView();
         }
         public IActionResult Review()
         {
-            return View();
+            return PartialView();
         }
         public IActionResult Coupon()
         {
-            return View();
+            return PartialView();
         }
         public IActionResult Star()
         {
+            return PartialView();
+        }
+
+        public IActionResult CustomerInfo()
+        {
+            return PartialView();
+        }
+
+        public IActionResult Createmember(string Email)
+        {
+            //DemoContext db = new DemoContext();
+            //var qq = _context.Members.Where(a => a.Email == member.Email).ToList();
+            //if (qq.Count>0)
+
+            //    return Content("此帳號已存在", "text/plain");
+
+            //else
+
+            //    return Content("帳號可以使用", "text/plain");
+            return View();
+        }
+        public IActionResult LoginModal()
+        {
             return View();
         }
 
-        public IActionResult 註冊Modal(/*Member p*/)
+        public IActionResult Forgetpas()
         {
-        //    PlanetTravelContext db = new PlanetTravelContext();
-        //    db.Members.Add(p);
-        //    db.SaveChanges();
-
             return View();
-        }
-        public IActionResult 先隨便()
-        {
-            return PartialView("註冊Modal");
         }
     }
 }

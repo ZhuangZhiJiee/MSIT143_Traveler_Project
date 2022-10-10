@@ -13,14 +13,14 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
-#line 1 "C:\Users\莊智傑\source\repos\MSIT143_Traveler_Project\MIST143_Traveler\MIST143_Traveler\Views\_ViewImports.cshtml"
+#line 1 "C:\Users\kooh\Desktop\Proj\MIST143_Traveler\MIST143_Traveler\Views\_ViewImports.cshtml"
 using MIST143_Traveler;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\莊智傑\source\repos\MSIT143_Traveler_Project\MIST143_Traveler\MIST143_Traveler\Views\_ViewImports.cshtml"
+#line 2 "C:\Users\kooh\Desktop\Proj\MIST143_Traveler\MIST143_Traveler\Views\_ViewImports.cshtml"
 using MIST143_Traveler.Models;
 
 #line default
@@ -63,7 +63,7 @@ using MIST143_Traveler.Models;
         {
             WriteLiteral("\r\n");
 #nullable restore
-#line 2 "C:\Users\莊智傑\source\repos\MSIT143_Traveler_Project\MIST143_Traveler\MIST143_Traveler\Views\Shopping\PayData.cshtml"
+#line 2 "C:\Users\kooh\Desktop\Proj\MIST143_Traveler\MIST143_Traveler\Views\Shopping\PayData.cshtml"
   
     ViewData["Title"] = "PayData";
 
@@ -72,7 +72,7 @@ using MIST143_Traveler.Models;
 #nullable disable
             DefineSection("Styles", async() => {
                 WriteLiteral("\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "bc50fe849b007f12f36ef6df33bcaac434a304e05599", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "489dc9eef5265420773035cafbb84ab6b15b453c5599", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -118,7 +118,7 @@ using MIST143_Traveler.Models;
                         <div class=""border-bottom-line""></div>
                         <div class=""inf");
             WriteLiteral("oTitle hasTag\">預定資料</div>\r\n                        <div class=\"infoBoxOuter\">\r\n\r\n                            <div class=\"infoBoxInner reserveBlock\">\r\n                                <div class=\"imgBox\">\r\n                                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "bc50fe849b007f12f36ef6df33bcaac434a304e08183", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "489dc9eef5265420773035cafbb84ab6b15b453c8183", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -212,8 +212,59 @@ using MIST143_Traveler.Models;
             </div>
         </div>
         <!-- 編輯參加人彈窗 -->
-");
-            WriteLiteral(@"        <!-- 編輯聯絡資料彈窗 -->
+        <div class=""modal fade"" id=""joinModa");
+            WriteLiteral(@"l"" tabindex=""-1"" aria-labelledby=""exampleModalLabel""
+             aria-hidden=""true"" style=""display: none;"">
+            <div class=""modal-dialog"">
+                <div class=""modal-content"">
+                    <button type=""button"" class=""btn-close modalClose "" data-bs-dismiss=""modal""
+                            aria-label=""Close""></button>
+                    <div class=""infoTitle mt-4"">編輯參加人資料</div>
+                    <div class=""border-bottom-line""></div>
+                    <div class=""modal-body"">
+                        ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "489dc9eef5265420773035cafbb84ab6b15b453c16413", async() => {
+                WriteLiteral(@"
+                            <div class=""mb-3"">
+                                <label class=""col-form-label"">姓名:<span class=""color-main""> *</span></label>
+                                <input type=""text"" class=""form-control"">
+                            </div>
+                            <div class=""mb-3"">
+                                <label class=""col-form-label"">生日:<span class=""color-main""> *</span></label>
+                                <input type=""date"" id=""start"" name=""trip-start"" class=""form-control""
+                                       value=""2018-07-22"" min=""2018-01-01"" max=""2018-12-31"">
+                            </div>
+                            <div class=""mb-3"">
+                                <label class=""col-form-label"">
+                                    身分證件號碼（台灣身分證）:<span class=""color-main"">
+                                        *
+                                    </span>
+                                </label>
+                                <input type=""te");
+                WriteLiteral("xt\" class=\"form-control\">\r\n                            </div>\r\n                        ");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"
+                    </div>
+                    <div class=""modal-footer"">
+                        <button type=""button"" class=""btn btn-secondary"" data-bs-dismiss=""modal"">取消</button>
+                        <button type=""button"" class=""btn btn-primary"">儲存</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 編輯聯絡資料彈窗 -->
         <div class=""modal fade"" id=""contentModal"" tabindex=""-1"" aria-labelledby=""exampleModalLabel""
              aria-hidden=""true"" style=""display: none;"">
             <div class=""modal-dialog"">
@@ -224,7 +275,7 @@ using MIST143_Traveler.Models;
                     <div class=""border-bottom-line""></div>
                     <div class=""modal-body"">
                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bc50fe849b007f12f36ef6df33bcaac434a304e014208", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "489dc9eef5265420773035cafbb84ab6b15b453c19847", async() => {
                 WriteLiteral(@"
                             <div class=""mb-3"">
                                 <label class=""col-form-label"">姓名:<span class=""color-main""> *</span></label>

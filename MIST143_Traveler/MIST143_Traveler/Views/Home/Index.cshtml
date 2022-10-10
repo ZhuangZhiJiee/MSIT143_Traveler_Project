@@ -1,7 +1,11 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
+@section Styles{
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet"
+          href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+}
 <!-- 搜尋banner區 -->
 <section>
     <div class="banner-bar">
@@ -15,7 +19,8 @@
                            name=""
                            id=""
                            placeholder="探索全球目的地/活動" />
-                    <button type="submit">搜尋</button>
+                    <button type="button" onclick="location.href='@Url.Action("ProductListHomePage", "ProductListPage")'">搜尋</button>                    
+                    
                 </div>
             </form>
         </div>
@@ -24,32 +29,34 @@
              data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./Images/banner01.jpg"
+                    <img src="@Url.Content("~/Images/banner01.jpg")"
                          class="d-block w-100"
                          alt="banner01" />
                 </div>
                 <div class="carousel-item">
-                    <img src="./Images/banner02.jpg"
+                    <img src="@Url.Content("~/Images/banner02.jpg")"
                          class="d-block w-100"
                          alt="banner02" />
                 </div>
-                <div class="carousel-item">
-                    <img src="./Images/banner03.jpg"
+                @*<div class="carousel-item">
+                    <img src="@Url.Content("~/Images/banner03.jpg")"
                          class="d-block w-100"
                          alt="banner03" />
-                </div>
+                </div>*@
             </div>
             <button class="carousel-control-prev"
                     type="button"
                     data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
+                    data-bs-slide="prev"
+                    style="margin-left:-50px">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next"
                     type="button"
                     data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
+                    data-bs-slide="next"
+                     style="margin-right:-30px">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -69,28 +76,28 @@
                 <div class="swiper mySwiper container">
                     <div class="swiper-wrapper content">
                         <div class="swiper-slide card">
-                            <img src="./Images/discount_AD_slider/discount_AD_slider01.jpg" />
+                            <img src="~/Images/discount_AD_slider/discount_AD_slider01.jpg" />
                         </div>
                         <div class="swiper-slide card">
-                            <img src="./Images/discount_AD_slider/discount_AD_slider02.jpg" />
+                            <img src="~/Images/discount_AD_slider/discount_AD_slider02.jpg" />
                         </div>
                         <div class="swiper-slide card">
-                            <img src="./Images/discount_AD_slider/discount_AD_slider03.jpg" />
+                            <img src="~/Images/discount_AD_slider/discount_AD_slider03.jpg" />
                         </div>
                         <div class="swiper-slide card">
-                            <img src="./Images/discount_AD_slider/discount_AD_slider04.jpg" />
+                            <img src="~/Images/discount_AD_slider/discount_AD_slider04.jpg" />
                         </div>
                         <div class="swiper-slide card">
-                            <img src="./Images/discount_AD_slider/discount_AD_slider05.jpg" />
+                            <img src="~/Images/discount_AD_slider/discount_AD_slider05.jpg" />
                         </div>
                         <div class="swiper-slide card">
-                            <img src="./Images/discount_AD_slider/discount_AD_slider06.jpg" />
+                            <img src="~/Images/discount_AD_slider/discount_AD_slider06.jpg" />
                         </div>
                         <div class="swiper-slide card">
-                            <img src="./Images/discount_AD_slider/discount_AD_slider07.jpg" />
+                            <img src="~/Images/discount_AD_slider/discount_AD_slider07.jpg" />
                         </div>
                         <div class="swiper-slide card">
-                            <img src="./Images/discount_AD_slider/discount_AD_slider08.jpg" />
+                            <img src="~/Images/discount_AD_slider/discount_AD_slider08.jpg" />
                         </div>
                     </div>
                 </div>
@@ -111,24 +118,24 @@
                 <div class="swiper container">
                     <div class="row">
                         <div class="col">
-                            <img src="./Images/icons/travel.png" />
+                            <img src="~/Images/icons/travel.png" />
                             <p class="slogan_CardTiltle">發掘玩樂靈感</p>
                             <p>
                                 提供近50萬種吃喝玩樂、租車、住宿等體驗，帶你發現更好玩的世界
                             </p>
                         </div>
                         <div class="col">
-                            <img src="./Images/icons/sunrise.png" />
+                            <img src="~/Images/icons/sunrise.png" />
                             <p class="slogan_CardTiltle">享優惠與回饋</p>
                             <p>以優惠價享優質體驗，再賺 Planet 積分折抵下次消費</p>
                         </div>
                         <div class="col">
-                            <img src="./Images/icons/destination.png" />
+                            <img src="~/Images/icons/destination.png" />
                             <p class="slogan_CardTiltle">預訂簡單快速</p>
                             <p>享極速預訂、免排隊入場、免費取消等服務，輕鬆玩，無負擔</p>
                         </div>
                         <div class="col">
-                            <img src="./Images/icons/airplane.png" />
+                            <img src="~/Images/icons/airplane.png" />
                             <p class="slogan_CardTiltle">玩樂品質保證</p>
                             <p>活動評價公開，專業客服團隊協助，安心出遊不踩雷</p>
                         </div>
@@ -151,7 +158,7 @@
                 <div class="swiper mySwiper2 container">
                     <div class="swiper-wrapper content">
                         <div class="swiper-slide card">
-                            <img src="./Images/cards/card01.jpg"
+                            <img src="~/Images/cards/card01.jpg"
                                  class="card-img-top"
                                  alt="..." />
                             <div class="card-body">
@@ -166,7 +173,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide card">
-                            <img src="./Images/cards/card02.jpg"
+                            <img src="~/Images/cards/card02.jpg"
                                  class="card-img-top"
                                  alt="..." />
                             <div class="card-body">
@@ -181,7 +188,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide card">
-                            <img src="./Images/cards/card03.jpg"
+                            <img src="~/Images/cards/card03.jpg"
                                  class="card-img-top"
                                  alt="..." />
                             <div class="card-body">
@@ -196,7 +203,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide card">
-                            <img src="./Images/cards/card04.jpg"
+                            <img src="~/Images/cards/card04.jpg"
                                  class="card-img-top"
                                  alt="..." />
                             <div class="card-body">
@@ -209,7 +216,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide card">
-                            <img src="./Images/cards/card05.jpg"
+                            <img src="~/Images/cards/card05.jpg"
                                  class="card-img-top"
                                  alt="..." />
                             <div class="card-body">
@@ -224,7 +231,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide card">
-                            <img src="./Images/cards/card06.jpg"
+                            <img src="~/Images/cards/card06.jpg"
                                  class="card-img-top"
                                  alt="..." />
                             <div class="card-body">
@@ -239,7 +246,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide card">
-                            <img src="./Images/cards/card07.jpg"
+                            <img src="~/Images/cards/card07.jpg"
                                  class="card-img-top"
                                  alt="..." />
                             <div class="card-body">
@@ -254,7 +261,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide card">
-                            <img src="./Images/cards/card08.jpg"
+                            <img src="~/Images/cards/card08.jpg"
                                  class="card-img-top"
                                  alt="..." />
                             <div class="card-body">
@@ -269,7 +276,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide card">
-                            <img src="./Images/cards/card09.jpg"
+                            <img src="~/Images/cards/card09.jpg"
                                  class="card-img-top"
                                  alt="..." />
                             <div class="card-body">
@@ -284,7 +291,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide card">
-                            <img src="./Images/cards/card10.jpg"
+                            <img src="~/Images/cards/card10.jpg"
                                  class="card-img-top"
                                  alt="..." />
                             <div class="card-body">
@@ -323,51 +330,51 @@
                 <div class="swiper mySwiper3 container">
                     <div class="swiper-wrapper content">
                         <div class="swiper-slide card top_destinationCard">
-                            <img src="./Images/top_destination/top_destination01.jpg" />
+                            <img src="~/Images/top_destination/top_destination01.jpg" />
                             <p>東京</p>
                         </div>
                         <div class="swiper-slide card top_destinationCard">
-                            <img src="./Images/top_destination/top_destination02.jpg" />
+                            <img src="~/Images/top_destination/top_destination02.jpg" />
                             <p>台北</p>
                         </div>
                         <div class="swiper-slide card top_destinationCard">
-                            <img src="./Images/top_destination/top_destination03.jpg" />
+                            <img src="~/Images/top_destination/top_destination03.jpg" />
                             <p>大阪</p>
                         </div>
                         <div class="swiper-slide card top_destinationCard">
-                            <img src="./Images/top_destination/top_destination04.jpg" />
+                            <img src="~/Images/top_destination/top_destination04.jpg" />
                             <p>宜蘭</p>
                         </div>
                         <div class="swiper-slide card top_destinationCard">
-                            <img src="./Images/top_destination/top_destination05.jpg" />
+                            <img src="~/Images/top_destination/top_destination05.jpg" />
                             <p>台南</p>
                         </div>
                         <div class="swiper-slide card top_destinationCard">
-                            <img src="./Images/top_destination/top_destination06.jpg" />
+                            <img src="~/Images/top_destination/top_destination06.jpg" />
                             <p>台中</p>
                         </div>
                         <div class="swiper-slide card top_destinationCard">
-                            <img src="./Images/top_destination/top_destination07.jpg" />
+                            <img src="~/Images/top_destination/top_destination07.jpg" />
                             <p>新加坡</p>
                         </div>
                         <div class="swiper-slide card top_destinationCard">
-                            <img src="./Images/top_destination/top_destination08.jpg" />
+                            <img src="~/Images/top_destination/top_destination08.jpg" />
                             <p>首爾</p>
                         </div>
                         <div class="swiper-slide card top_destinationCard">
-                            <img src="./Images/top_destination/top_destination09.jpg" />
+                            <img src="~/Images/top_destination/top_destination09.jpg" />
                             <p>香港</p>
                         </div>
                         <div class="swiper-slide card top_destinationCard">
-                            <img src="./Images/top_destination/top_destination10.jpg" />
+                            <img src="~/Images/top_destination/top_destination10.jpg" />
                             <p>金門、馬祖</p>
                         </div>
                         <div class="swiper-slide card top_destinationCard">
-                            <img src="./Images/top_destination/top_destination11.jpg" />
+                            <img src="~/Images/top_destination/top_destination11.jpg" />
                             <p>巴黎</p>
                         </div>
                         <div class="swiper-slide card top_destinationCard">
-                            <img src="./Images/top_destination/top_destination12.jpg" />
+                            <img src="~/Images/top_destination/top_destination12.jpg" />
                             <p>峇里島</p>
                         </div>
                     </div>
@@ -393,7 +400,7 @@
                     <div class="swiper-wrapper content">
                         <div class="swiper-slide card tier_card"
                              style="
-                    background-image: url('./Images/TireListPic/TireListPic01.jpg');
+                    background-image: url('@Url.Content("~/Images/TireListPic/TireListPic01.jpg")');
                   ">
                             <div class="tier_card_slogan">
                                 <span class="tier_card_slogan_title">星級度假時光</span>
@@ -405,7 +412,7 @@
                         </div>
                         <div class="swiper-slide card tier_card"
                              style="
-                    background-image: url('./Images/TireListPic/TireListPic02.jpg');
+                    background-image: url('@Url.Content("~/Images/TireListPic/TireListPic02.jpg")');
                   ">
                             <div class="tier_card_slogan">
                                 <span class="tier_card_slogan_title">秋天賞楓秘境</span>
@@ -417,7 +424,7 @@
                         </div>
                         <div class="swiper-slide card tier_card"
                              style="
-                    background-image: url('./Images/TireListPic/TireListPic03.jpg');
+                    background-image:url('@Url.Content("~/Images/TireListPic/TireListPic03.jpg")');
                   ">
                             <div class="tier_card_slogan">
                                 <span class="tier_card_slogan_title">初秋微涼泡湯早鳥價</span>
@@ -429,7 +436,7 @@
                         </div>
                         <div class="swiper-slide card tier_card"
                              style="
-                    background-image: url('./Images/TireListPic/TireListPic04.jpg');
+                    background-image:url('@Url.Content("~/Images/TireListPic/TireListPic04.jpg")');
                   ">
                             <div class="tier_card_slogan">
                                 <span class="tier_card_slogan_title">秋高氣爽早鳥露營75折起</span>
@@ -441,7 +448,7 @@
                         </div>
                         <div class="swiper-slide card tier_card"
                              style="
-                    background-image: url('./Images/TireListPic/TireListPic05.jpg');
+                    background-image: url('@Url.Content("~/Images/TireListPic/TireListPic05.jpg")');
                   ">
                             <div class="tier_card_slogan">
                                 <span class="tier_card_slogan_title">美食專區推薦</span>
@@ -468,12 +475,12 @@
             <div class="advertisement_slogan">
                 <p>星球旅遊入門攻略</p>
                 <img style="width: 95%; border-radius: 15px"
-                     src="./Images/APP_banner01.jpg" />
+                     src="~/Images/APP_banner01.jpg" />
             </div>
             <div class="app_card_container">
                 <div class="app_card">
                     <div class="app_card_img">
-                        <img src="./Images/app_pic03.png" />
+                        <img src="~/Images/app_pic03.png" />
                     </div>
                     <div class="app_card_title">星球旅遊部落格</div>
                     <div class="app_card_text">
@@ -485,7 +492,7 @@
                 </div>
                 <div class="app_card">
                     <div class="app_card_img">
-                        <img src="./Images/app_pic02.png" />
+                        <img src="~/Images/app_pic02.png" />
                     </div>
                     <div class="app_card_title">寫評價賺積分</div>
                     <div class="app_card_text">
@@ -497,7 +504,7 @@
                 </div>
                 <div class="app_card">
                     <div class="app_card_img">
-                        <img src="./Images/app_pic01.png" />
+                        <img src="~/Images/app_pic01.png" />
                     </div>
                     <div class="app_card_title">揪好友拿好康</div>
                     <div class="app_card_text">
@@ -595,3 +602,7 @@
 <!-- 合作夥伴 -->
 <!-- 熱門推薦(#todo_list) -->
 <!-- 熱門推薦(#todo_list) -->
+@section Scripts{
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="~/js/travelIndex.js"></script>
+}

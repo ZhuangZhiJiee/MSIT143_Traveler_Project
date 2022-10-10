@@ -13,14 +13,14 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
-#line 1 "C:\Users\莊智傑\source\repos\MSIT143_Traveler_Project\MIST143_Traveler\MIST143_Traveler\Views\_ViewImports.cshtml"
+#line 1 "C:\Users\kooh\Desktop\Proj\MIST143_Traveler\MIST143_Traveler\Views\_ViewImports.cshtml"
 using MIST143_Traveler;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\莊智傑\source\repos\MSIT143_Traveler_Project\MIST143_Traveler\MIST143_Traveler\Views\_ViewImports.cshtml"
+#line 2 "C:\Users\kooh\Desktop\Proj\MIST143_Traveler\MIST143_Traveler\Views\_ViewImports.cshtml"
 using MIST143_Traveler.Models;
 
 #line default
@@ -60,7 +60,7 @@ using MIST143_Traveler.Models;
         {
             WriteLiteral("\r\n");
 #nullable restore
-#line 2 "C:\Users\莊智傑\source\repos\MSIT143_Traveler_Project\MIST143_Traveler\MIST143_Traveler\Views\Shopping\ShoppingCart.cshtml"
+#line 2 "C:\Users\kooh\Desktop\Proj\MIST143_Traveler\MIST143_Traveler\Views\Shopping\ShoppingCart.cshtml"
   
     ViewData["Title"] = "ShoppingCart";
 

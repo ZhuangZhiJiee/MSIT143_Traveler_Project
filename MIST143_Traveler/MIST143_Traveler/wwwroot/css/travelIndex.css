@@ -30,6 +30,7 @@
 }
 .main-header .main-nav {
   margin-left: auto;
+  cursor:pointer;
 }
 .main-header .main-nav a {
   text-decoration: none;
@@ -37,12 +38,14 @@
   border-radius: 15px;
   font-size: 15px;
   color: rgb(16, 22, 22);
+  
+
 }
 .main-header .main-nav a:hover {
   background-color: rgba(200, 198, 198, 0.571);
 }
 .main-header .main-nav a:nth-child(5) {
-  background-color: coral;
+  background-color: coral; /*測試*/
   color: aliceblue;
 }
 
@@ -409,8 +412,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin:0 10px;
 }
-.app_card_container,
+
 .app_card_img,
 .app_card_title,
 .app_card_text,
@@ -420,8 +424,10 @@
   margin: 10px;
 }
 .app_card_container {
-  justify-content: space-around;
-  padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 10px;
 }
 .app_card_img img {
   width: 230px;

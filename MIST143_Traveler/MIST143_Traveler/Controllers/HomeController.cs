@@ -27,6 +27,11 @@ namespace MIST143_Traveler.Controllers
         {
             return View();
         }
+        //public IActionResult Header_Search_Bar()
+        //{
+        //    return RedirectToAction("ProductListHomePage", "ProductListPage", null);
+        //}
+        
 
         public IActionResult ContactCenter()
         {
