@@ -46,9 +46,17 @@ namespace MIST143_Traveler.Controllers
             return PartialView();
         }
 
-        public IActionResult Createmember()
+        public IActionResult Createmember(string Email)
         {
+            //DemoContext db = new DemoContext();
+            //var qq = _context.Members.Where(a => a.Email == member.Email).ToList();
+            //if (qq.Count>0)
 
+            //    return Content("此帳號已存在", "text/plain");
+
+            //else
+
+            //    return Content("帳號可以使用", "text/plain");
             return View();
         }
         public IActionResult LoginModal()
@@ -56,6 +64,10 @@ namespace MIST143_Traveler.Controllers
             return View();
         }
 
+        public IActionResult Forgetpas()
+        {
+            return View();
+        }
     }
 }
 
