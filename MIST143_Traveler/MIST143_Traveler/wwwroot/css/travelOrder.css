@@ -57,7 +57,7 @@
   padding-top: 0;
  }
 .payContainer .infoTitle{
- font-size: 22px;
+ font-size: 30px;
  color: black;
  font-weight: bold;
  padding: 0 16px;
@@ -296,9 +296,15 @@
   justify-content: space-between;
   align-items: center;
 }
-
+.shoppingCartInfoRow .infoBox {
+    width: 62%;
+}
 .shoppingCartInfoRow .imgBox{
-  width: 100px;
+  width: 120px;
+  height: 80px;
+  background-image: url('../Images/pic2.jpg');
+  background-size: cover;
+  background-position: center center;
 }
 .shoppingCartInfoRow .chooseNumber{
   text-align: center;
@@ -323,4 +329,8 @@
 .paddingMore {
     padding-left: 30px !important;
     padding-right: 30px;
+}
+
+#creditCardBlock{
+    display:none;
 }

@@ -6,7 +6,7 @@
 
     <link href="~/css/924自用.css" rel="stylesheet" />
     <link href="~/css/style.css" rel="stylesheet" />
-    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    @*<link href="~/css/bootstrap.min.css" rel="stylesheet" />*@
     <link href="~/css/product.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/css/travelOrder.css" />
 }
@@ -57,7 +57,7 @@
                     <div class="card-body">
                         <h5 class="card-title">NT$ 300</h5>
                         <p class="card-text">若您發現更低的價格，我們承諾提供兩倍差價退費！</p>
-                        <a class="btn btn-warning 方案選擇">加入購物車</a>
+                        <a class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#joinModal">加入購物車</a>
                     </div>
                 </div>
             </div>
@@ -104,22 +104,22 @@
                                 </div>
                                 <div class="subInfoText ps-3">請選擇參加日期</div>
                                 <div class="selectInput ps-3">
-                                    <input type="date" id="start" name="trip-start" class="form-control" value="2018-07-22"
-                                           min="2018-01-01" max="2018-12-31">
+                                    <input type="date" id="start" name="trip-start" class="form-control" value="2022-10-11"
+                                           min="2022-10-11" max="2022-12-31">
                                 </div>
 
                                 <div class="subInfoText ps-3">請選擇時間</div>
                                 <div class="selectInput ps-3">
                                     <select class="form-select" aria-label="Default select example">
-                                        <option selected>09:00 上午 NT$ 899</option>
-                                        <option value="1">01:00 下午 NT$ 899</option>
+                                        <option selected>09:00 上午 NT$300</option>
+                                        <option value="1">01:00 下午 NT$ 300</option>
                                     </select>
                                 </div>
 
                                 <div class="subInfoText ps-3">方案類型</div>
                                 <div class="payUserRow ps-3">
                                     <div class="payUser active">
-                                        賞鯨 & 登島 & 環繞龜山島
+                                        【台北101觀景台】最High夜景-搗蛋派對星光票
                                     </div>
                                 </div>
                                 <div class="subInfoText ps-3">數量</div>
@@ -127,7 +127,7 @@
                                 <div class="py-3">
                                     <div class="chooseNumberRow mx-3">
                                         <div class="chooseTitle">
-                                            成人
+                                            每人
                                         </div>
                                         <div class="chooseNumberBlock">
                                             <button type="button" id="adultMinus"
@@ -141,7 +141,7 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="chooseNumberRow mx-3 mt-2">
+                                    @*<div class="chooseNumberRow mx-3 mt-2">
                                         <div class="chooseTitle">
                                             兒童
                                         </div>
@@ -156,15 +156,15 @@
                                                 +
                                             </button>
                                         </div>
-                                    </div>
+                                    </div>*@
                                 </div>
                                 <div class="px-3 totalRow">
                                     <div class="my-3">
-                                        <div class="titleFontStyle">NT$ 899</div>
+                                        <div class="titleFontStyle" >NT$ <span id="totalPrice">0</span></div>
                                         <div class="subInfoText">完成所有必填選項</div>
                                     </div>
                                     <div class="rightBtns">
-                                        <button type="button" class="btn btn-main">加入購物車</button>
+                                        <button type="button" class="btn btn-main" data-bs-toggle="modal" data-bs-target="#joinModal">加入購物車</button>
                                         <button type="button" class="btn btn-main ms-3">
                                             <a class="buttonInnderA" href="../Shopping/PayData">立即預定</a>
                                         </button>
@@ -292,6 +292,24 @@
                 <h2><span class="一條根"> </span><span>常見問題</span></h2>
             </div>
 
+        </div>
+    </div>
+    <!-- 已加入購物車訊息彈窗 -->
+    <div class="modal fade" id="joinModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+         style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="btn-close modalClose " data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                <div class="infoTitle mt-4"></div>
+                <div class="modal-body text-center ">
+                    <h4>已加入至購物車</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                        aria-label="Close">確定</button>
+                </div>
+            </div>
         </div>
     </div>
     @section Scripts{

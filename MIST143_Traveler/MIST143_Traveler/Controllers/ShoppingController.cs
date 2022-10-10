@@ -10,7 +10,6 @@ namespace MIST143_Traveler.Controllers
     {
         public IActionResult PayData()
         {
-            //GitHub怎麼這麼難用
             return View();
         }
         public IActionResult PayCheckout()

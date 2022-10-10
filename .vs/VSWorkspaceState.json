@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\MIST143_Traveler",
+    "\\MIST143_Traveler\\MIST143_Traveler",
+    "\\MIST143_Traveler\\MIST143_Traveler\\Controllers",
+    "\\MIST143_Traveler\\MIST143_Traveler\\Views",
+    "\\MIST143_Traveler\\MIST143_Traveler\\Views\\ProductListPage"
   ],
-  "SelectedNode": "\\MIST143_Traveler.sln",
+  "SelectedNode": "\\MIST143_Traveler\\MIST143_Traveler\\Controllers\\HomeController.cs",
   "PreviewInSolutionExplorer": false
 }
