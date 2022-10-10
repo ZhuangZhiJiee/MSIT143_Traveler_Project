@@ -26,20 +26,25 @@
                             <div class="shoppingCartInfoRow">
                                 <input class="form-check-input mt-0 " type="checkbox" value=""
                                        aria-label="Checkbox for following text input">
-                                <div class="imgBox ms-1">
-                                    <img src="~/Images/pic1.jpg" class="rounded float-start"
-                                         alt="...">
+                                <div class="imgBox ms-3">
+                                    @*<img src="~/Images/pic2.jpg" class="rounded float-start"
+                                         alt="...">*@
                                 </div>
-                                <div class="infoBox ms-1">
-                                    <div class="titleFontStyle">龜山島登島・賞鯨・環繞龜山島</div>
-                                    <div class="subInfoText">方案類型: 賞鯨 & 環繞龜山島</div>
+                                <div class="infoBox ms-1 px-3">
+                                    <div class="titleFontStyle">
+                                        【領券現折100】Klook獨家優惠｜台北101觀景台門票｜萬聖節搗蛋派對｜高空Sky Lounge百萬夜景
+                                    </div>
+                                    <div class="subInfoText">
+                                        方案類型:【台北101觀景台】最High夜景-搗蛋派對星光票
+
+                                    </div>
                                 </div>
                                 <div class="subInfoText">
-                                    2022年10月3日 10:00AM<br>
+                                    2022年10月11日 10:00AM<br>
                                     當地時間
                                 </div>
-                                <div class="chooseNumber">
-                                    <div class="subtext">成人</div>
+                                <div class="chooseNumber ps-1">
+                                    <div class="subtext">每人</div>
                                     <div class="chooseNumberBlock">
                                         <button type="button" id="childMinus"
                                                 class="btn btn-outline-secondary">
@@ -59,16 +64,16 @@
                                     <a class="buttonA" href="./travelPayCheckout.html">編輯</a> |
                                     <a class="buttonA">刪除</a>
                                 </div>
-                                <div class="titleFontStyle">NT$ 899</div>
+                                <div class="titleFontStyle">NT$ <span id="shoppingCartTotalPrice">300</span></div>
                             </div>
                         </div>
                     </div>
                     <div class="col-3 ">
                         <div class="rightSide ">
                             <div class="subInfoText">1件總計 <i class="bi bi-caret-down"></i></div>
-                            <div class="titleFontStyle">NT$ 899</div>
+                            <div class="titleFontStyle">NT$ <span id="totalPayPrice">300</span></div>
                             <button type="button" class="btn btn-main my-3 fullSize" id="goPayBtn">
-                                <a class="buttonInnderA" href="../Shopping/PayData">前往付款</a>
+                                <a class="buttonInnderA" href="../Shopping/PayData">結帳</a>
                             </button>
                         </div>
                     </div>
