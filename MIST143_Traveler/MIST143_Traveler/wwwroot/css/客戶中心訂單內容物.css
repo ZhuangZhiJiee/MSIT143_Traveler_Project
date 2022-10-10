@@ -37,3 +37,29 @@
     min-width: 160px;
 }
 
+.mborder {
+    background-image: url(https://res.klook.com/image/upload/q_80/v1638331463/wave_line_green_2x_updated_ymgpew.png);
+    height: 8px;
+    background-size: 100% 100%;
+    top: -1px;
+    width: 285px;
+    font-size:1px;
+}
+.按鈕顏色2 {
+    
+   color:black;
+    border: none;
+    min-width: 275px;
+    align-items: center
+}
+
+.小圖示{
+margin-right:10px;
+width:24px;
+height:24px;
+font-size:24px;
+}
+.上面空間{
+    margin-top:40px;
+    margin-bottom:20px;
+}

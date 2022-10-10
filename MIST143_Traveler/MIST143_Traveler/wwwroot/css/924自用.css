@@ -1,10 +1,10 @@
-.card img{
+/*.card img{
     width: 48px;
     height: 48PX;
-    /* display: flex; */
+     display: flex; 
     align-items: center;
     
-}
+}*/
 .search_area{
     padding: 60px 0;
 }

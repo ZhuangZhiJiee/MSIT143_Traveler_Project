@@ -209,7 +209,7 @@ h6,
 
 .page-header {
     margin-bottom: 6rem;
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),url('https://localhost:44326/images/carousel-1.jpg'), center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),url('https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1440,h_366/q_80/v1579086986/klook-nuxt-web/desktop/faq-banner.webp'), center center no-repeat;
     background-size: cover;
 }
 
