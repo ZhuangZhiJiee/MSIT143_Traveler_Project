@@ -118,20 +118,23 @@
     
     <button type="button" class="btn btn-success" onclick="BtnDemo()">Demo</button>
     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-    <button type="submit" class="btn btn-primary ccc" data-bs-dismiss="modal">註冊</button>
+    <button type="submit" class="btn btn-primary ccc" data-bs-dismiss="modal" onclick="Btncre()">註冊</button>
 </div>
 
 <script>
     function BtnDemo() {
-        $("#TitleName").val("陳")
-        $('#Name').val("俊漢")
+        $("#TitleName").val("林")
+        $('#Name').val("恆佑")
         $('#Email').val("ask@yahoo.com.tw")
         $('#Phone').val("0966666666")
         $('#Password').val("a77777777")
         $('#Password2').val("a77777777")
         $('#address').val("和平東路二段106號11樓")
     }
-
+    const Btncre = () => {
+        alert("註冊成功")
+    }
+    
 </script>
 
 @section Scripts {
