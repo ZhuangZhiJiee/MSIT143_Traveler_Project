@@ -20,12 +20,12 @@
                 <div class="box_body d-flex  mb-2">
                     <div class="inputs p-2 flex-fill">
                         <header>姓氏</header>
-                        <input class="form-control" type="text" placeholder="姓氏" aria-label="default input example" name="MemberTittle">
+                        <input class="form-control" type="text" placeholder="姓氏" aria-label="default input example" name="MemberTittle"id="TitleName">
                     </div>
 
                     <div class="inputs p-2 flex-fill">
                         <header>名稱</header>
-                        <input class="form-control" type="text" placeholder="名稱" aria-label="default input example" name="MemberName">
+                        <input class="form-control" type="text" placeholder="名稱" aria-label="default input example" name="MemberName" id="Name">
                     </div>
                 </div>
 
@@ -33,25 +33,25 @@
                 <div class="box_body d-flex  mb-2">
                     <div class="inputs p-2 flex-fill">
                         <header>EMAIL</header>
-                        <input class="form-control" type="email" placeholder="123" aria-label="default input example" name="Email">
+                        <input class="form-control" type="email" placeholder="123" aria-label="default input example" name="Email" id="Email">
                         <small id="sm" class="form-text text-muted"></small>
                     </div>
 
                     <div class="inputs p-2 flex-fill">
                         <header>聯繫電話</header>
-                        <input class="form-control" type="text" placeholder="PHONE" aria-label="default input example" name="Phone">
+                        <input class="form-control" type="text" placeholder="PHONE" aria-label="default input example" name="Phone" id="Phone">
                     </div>
                 </div>
 
                 <div class="box_body d-flex  mb-2">
                     <div class="inputs p-2 flex-fill">
                         <header>密碼</header>
-                        <input class="form-control" type="password" placeholder="password" aria-label="default input example" name="Password">
+                        <input class="form-control" type="password" placeholder="password" aria-label="default input example" name="Password" id="Password">
                     </div>
 
                     <div class="inputs p-2 flex-fill">
                         <header>再次確認密碼</header>
-                        <input class="form-control" type="password" placeholder="password" aria-label="default input example">
+                        <input class="form-control" type="password" placeholder="password" aria-label="default input example" id="Password2">
                     </div>
                 </div>
 
@@ -79,7 +79,7 @@
 
                     <div class="inputs p-2 flex-grow-1">
                         <header>地址</header>
-                        <input class="form-control" type="text" placeholder="北投區111號" aria-label="default input example" name="Address">
+                        <input class="form-control" type="text" placeholder="北投區111號" aria-label="default input example" name="Address" id="address">
                     </div>
                 </div>
 
@@ -115,12 +115,29 @@
 
 
 <div class="modal-footer">
-    <button type="button" class="btn btn-success">Demo</button>
-    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-    <button type="submit" class="btn btn-primary ccc">Send</button>
+    
+    <button type="button" class="btn btn-success" onclick="BtnDemo()">Demo</button>
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+    <button type="submit" class="btn btn-primary ccc" data-bs-dismiss="modal" onclick="Btncre()">註冊</button>
 </div>
 
+<script>
+    function BtnDemo() {
+        $("#TitleName").val("林")
+        $('#Name').val("恆佑")
+        $('#Email').val("ask@yahoo.com.tw")
+        $('#Phone').val("0966666666")
+        $('#Password').val("a77777777")
+        $('#Password2').val("a77777777")
+        $('#address').val("和平東路二段106號11樓")
+    }
+    const Btncre = () => {
+        alert("註冊成功")
+    }
+    
+</script>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    @*@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}*@
 }

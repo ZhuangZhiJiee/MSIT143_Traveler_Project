@@ -1,16 +1,16 @@
 /* 開始複製，注意一開始*{}代表全部margin、padding歸0 */
-* {
+/** {
     margin: 0px;
     padding: 0px;
-    list-style: none;
+    list-style: none;*/
     /* border: 1px solid red; */
-    font-family: Georgia, "Times New Roman", Times, serif;
+    /*font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .border-bottom-line {
     border-bottom: 2px solid rgba(225, 221, 221, 0.622);
     border-bottom: 2px solid rgba(225, 221, 221, 0.622);
-}
+}*/
 /* header的css範圍 */
 .main-header .container {
     background-color: rgb(255, 255, 255);
@@ -517,11 +517,12 @@ img {
 }
 
 .desktop {
-    display: flex;
+    /*display: flex;*/
     margin-top: 20px;
+    margin:auto;
     font-size: 14px;
     font-weight: 400;
-    line-height: 16.1px;
+    /*line-height: 16.1px;*/
 }
 
 .rwd-header-search-box-desktop {
@@ -600,7 +601,13 @@ img {
     border-radius: 8px;
     padding-left: 16px;
 }
-
+#menu {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    width: 8em;
+    margin-top: -2.5em;
+}
 .destination-tips-popup-new {
     position: absolute;
     -webkit-transform: translate(100%,-50%);
@@ -639,3 +646,198 @@ img {
     .destination-tips-new .destination-tips_link {
         margin: 0;
     }
+
+
+
+.experience-activity-card-section.desktop {
+    margin-top: 25px;
+}
+
+.experience-activity-card-section {
+    margin-top: 72px;
+}
+html,
+body {
+    height: 100%;
+}
+
+.overlay {
+    position: fixed;
+    display: none;
+    top: 0;
+    height:100%;
+    width:75%;
+    bottom: 0;
+    margin:initial auto;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+}
+
+.popup {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left: 25%;
+    text-align: center;
+    background: white;
+}
+
+    .popup h3 {
+        font-size: 15px;
+        height: 1000px;
+        line-height: 50px;
+        color: black;
+    }
+
+.CloseIcon {
+    cursor: pointer;
+    display:flex;
+}
+.view-all-button {
+    position: -webkit-sticky;
+    position: sticky;
+    text-align: center;
+    bottom: 30px;
+    z-index: 2;
+}
+.destination-guide-button.desktop .destination-guide-button_main {
+    text-align: center;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin: auto;
+    width: 50%;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -webkit-box-flex: 0;
+    flex: 0 0 100px;
+}
+.experience-destination-modal .destination-search-input {
+    border-radius: 8px 8px 4px 4px;
+    border-color: #eee;
+}
+
+.destination-search-input {
+    border-radius: 4px;
+    width: 80%;
+    height: 50px;
+    padding-left: 49px;
+    margin: 0;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 16px;
+    line-height: 1;
+}
+.search-box-recommend {
+    max-height: 348px;
+    overflow-y: auto;
+}
+
+
+
+.search-box-recommend {
+    display: -webkit-box;
+    display: flex;
+    height: 406px;
+}
+
+.search-box-recommend_left {
+    width: 44%;
+    border-right: 1px solid #eee;
+    float:left;
+
+}
+blockquote, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, li, ol, p, pre, table, td, th, ul {
+    margin: 0;
+    padding: 0;
+}
+.poli {
+    display: list-item;
+
+    text-align: -webkit-match-parent;
+}
+ol, ul {
+    list-style-type: none;
+}
+.search-box-recommend_groups{
+    margin:auto;
+    width:115.2px;
+
+}
+.search-box-recommend_groups > li.active {
+    background-color: #ff5b00;
+    color: #fff;
+}
+
+
+.search-box-recommend_groups > li {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    height: 58px;
+    padding-left: 24px;
+    padding-right: 6px;
+    line-height: 1.2;
+}
+    .search-box-recommend_groups > li.active .search-box-recommend_cities {
+        color: inherit;
+    }
+
+
+.search-box-recommend_cities {
+    margin-top: 4px;
+    color: #757575;
+    font-size: 12px;
+}
+b, strong {
+    font-weight: 600;
+}
+.search-box-recommend_right {
+    -webkit-box-flex: 1;
+    float:left;
+    width:56%;
+    padding: 14px 24px 24px;
+    overflow-y: auto;
+}
+
+.area-selector {
+    width: 100%;
+}
+.area-selector_label {
+    margin-bottom: 20px;
+}
+.area-selector_country .area-selector_country:lang(zh-Hans-CN), .area-selector_country:lang(zh-Hant-HK), .area-selector_country:lang(zh-Hant-TW) {
+    float:left;
+    width: 14%;
+}
+.area-selector_cities {
+    -webkit-box-flex: 1;
+    float:left;
+    margin-right:50px;
+    width:86%;
+    flex: 1;
+}
+.flgd {
+    width: 300px;
+    /*    border:3px solid red;*/
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+    float: right;
+}
+#menu {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    width: 8em;
+    margin-top: -2.5em;
+}
+.area_button{
+    margin-left:50%;
+    width:10em;
+}

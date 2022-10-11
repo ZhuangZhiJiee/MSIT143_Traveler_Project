@@ -19,32 +19,45 @@
         <input type="password" class="form-control" id="Pas" placeholder="password">
     </div>
     <div class="modal-footer mx-auto">
-        <button type="submit" class="btn btn-primary" id="btnlogin">送出</button>
+        <div style="margin-right:150px;">
+            <span>
+                <label>
+                    <span>
+                        <input type="checkbox" />
+                    </span>
+                    <span>記住我</span>
+                </label>
+            </span>
+        </div>
+        <button type="submit" class="btn btn-primary" id="btnlogin" onclick="BtnLogin()">登入</button>
         <button type="button" class="btn btn-success" id=" demo" onclick="DemoValue()">Demo</button>
         <a href="@Url.Content("~/CustomerCenter/Forgetpas")" class="btn-outline-dark">忘記密碼?</a>
 
     </div>
 </form>
-@*@section Scripts {
+@section Scripts {
     <script>
         //const login = document.querySelector("#btnlogin");
         //login.addEventListener("")
 
 
-    </script>*@
-@*}*@
+    </script>
+}
 
 <script>
-    const DemoValue = () => {
-        let act = document.querySelector("#Actemail");
+        const DemoValue = () => {
+         let act = document.querySelector("#Actemail");
         let pas = document.querySelector("#Pas");
         act.value = "mi@123.com";
-        pas.value = 123;
+        pas.value = 12345678;
+        
+    }
 
-
-
-
-    }</script>
+    const BtnLogin = () => {
+            alert("登入成功")
+        }
+</script>
+   
 
 @*@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
     }*@
