@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NCFqy4l7j6rAWCs8dQvlWbn/NvzYdNYG/pnY6jQDB+2Q3rt8s6r2fUg9NV5W15/E0SVYXxjhjB0X2KCdMUe9qw==",
+  "dgSpecHash": "a++SlqwlG69L6Orujaaa7MrD4gkK9u1fN83y4L/KGxWJ5N+xDbFruIrZaO8QsiyCsYn8Y6L+9lkd4g4wRcWQeQ==",
   "success": true,
-  "projectFilePath": "E:\\真期末專案\\MIST143_Traveler\\MIST143_Traveler\\MIST143_Traveler.csproj",
+  "projectFilePath": "C:\\Users\\Student\\source\\repos\\1011MSIT143_Traveler_Project\\MIST143_Traveler\\MIST143_Traveler\\MIST143_Traveler.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Student\\.nuget\\packages\\bootstrap\\5.2.1\\bootstrap.5.2.1.nupkg.sha512",
     "C:\\Users\\Student\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",

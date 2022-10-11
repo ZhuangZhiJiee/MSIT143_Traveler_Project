@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\真期末專案\\MIST143_Traveler\\MIST143_Traveler\\MIST143_Traveler.csproj": {}
+    "C:\\Users\\Student\\source\\repos\\1011MSIT143_Traveler_Project\\MIST143_Traveler\\MIST143_Traveler\\MIST143_Traveler.csproj": {}
   },
   "projects": {
-    "E:\\真期末專案\\MIST143_Traveler\\MIST143_Traveler\\MIST143_Traveler.csproj": {
+    "C:\\Users\\Student\\source\\repos\\1011MSIT143_Traveler_Project\\MIST143_Traveler\\MIST143_Traveler\\MIST143_Traveler.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\真期末專案\\MIST143_Traveler\\MIST143_Traveler\\MIST143_Traveler.csproj",
+        "projectUniqueName": "C:\\Users\\Student\\source\\repos\\1011MSIT143_Traveler_Project\\MIST143_Traveler\\MIST143_Traveler\\MIST143_Traveler.csproj",
         "projectName": "MIST143_Traveler",
-        "projectPath": "E:\\真期末專案\\MIST143_Traveler\\MIST143_Traveler\\MIST143_Traveler.csproj",
+        "projectPath": "C:\\Users\\Student\\source\\repos\\1011MSIT143_Traveler_Project\\MIST143_Traveler\\MIST143_Traveler\\MIST143_Traveler.csproj",
         "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
-        "outputPath": "E:\\真期末專案\\MIST143_Traveler\\MIST143_Traveler\\obj\\",
+        "outputPath": "C:\\Users\\Student\\source\\repos\\1011MSIT143_Traveler_Project\\MIST143_Traveler\\MIST143_Traveler\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -71,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.214\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.412\\RuntimeIdentifierGraph.json"
         }
       }
     }
